@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            background-image: linear-gradient( 178.7deg,  rgba(126,184,253,1) 5.6%, rgba(2,71,157,1) 95.3% );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contBox{
+            width: 1000px;
+            height: 70%;
+            background-color: aliceblue;
+            display: flex;
+            /* justify-content: ; */
+
+        }
+
+        .leftbox{
+            padding: 50px;
+            width: 500px;
+            background-color: rgb(110, 0, 110);
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            gap: 30px;
+        }
+
+        #p1{
+            padding-top: 30px;
+            font-size: 40px;
+            color: white;
+        }
+
+        #p2{
+            color: white;
+            font-size: 14px;
+        }
+
+        #p3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 40px;
+        }
+
+        #para{
+            font-size: 30px
+        }
+
+        p{
+            color: white;
+        }
+
+        .rightbox img{
+            width: 500px;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contBox">
+            <div class="leftbox">
+                <div id="p1">
+                    Get insights that help your bussiness grow
+                </div>
+                <div id="p2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quo, voluptatum illum sit hic saepe ipsum beatae quia tempore molestiae. Voluptatibus odit veniam fuga recusandae laborum laudantium aliquam vel. Ea.
+                </div>
+
+                <div id="p3">
+                    <div id="pa3">
+                        <p id="para">10k+</p>
+                        <p id="dpara">comments</p>
+                    </div>
+                    <div>
+                        <p id="para">214</p>
+                        <p id="dpara">paid users</p>
+                    </div>
+                    <div>
+                        <p id="para">12M+</p>
+                        <p id="dpara">veiws</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightbox">
+                <img src="photo.jpg" alt="banner_pic">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
