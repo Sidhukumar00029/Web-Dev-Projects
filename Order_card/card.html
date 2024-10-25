@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Card</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #74EBD5;
+            background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            width: 360px;
+            height: 600px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 2px 2px 25px black ;
+            gap: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #bannerimg{
+            width: 100%;
+            height: 27%;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .card p{
+            width: 70%;
+            text-align: center;
+        }
+
+        .boxCard{
+            width: 85%;
+            height: 13%;
+            background-color: #9face6bb;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly
+        }
+
+        .firstBox .firsthalf img{
+            width: 80;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        .firstBox{
+            width: 50%;
+            display: flex;
+            gap: 15px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .paybutton{
+            width: 79%;
+            height: 9%;
+            background-color: #250abb;
+            background-image: linear-gradient(225deg, #270bc1 0%, #784BA0 50%, #2B86C5 100%);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            box-shadow: 0px 5px 15px rgb(9, 9, 116);
+        }
+        
+        .cancelbutton{
+            color: #150763;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="banner_img.jfif" alt="banner_img_pic" id="bannerimg">
+            <h2>Order Summary</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis placeat amet repudiandae sapiente reprehenderit a suscipit pariatur velit sequi ab?</p>
+            <div class="boxCard">
+                <div class="firstBox">
+                    <div class="firsthalf">
+                        <img src="music_logo.jfif" alt="music_logo_pic">
+                    </div>
+                    <div class="secondhalf">
+                        <p>Annual Plan</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <div class="secondBox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <div class="paybutton">
+                Proceed to Payment
+            </div>
+            <div class="cancelbutton">
+                Cancel Order
+            </div>
+        </div>
+    </div>
+</body>
+</html>
